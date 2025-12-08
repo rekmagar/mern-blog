@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 // "http://localhost:3000/api/v1/user/register"
 
-app.use('/api/v1/users', userRoute);
+app.use('/api/v1/user', userRoute);
 
 app.listen(PORT, () => {
   connectDB();
