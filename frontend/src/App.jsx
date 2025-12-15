@@ -6,34 +6,35 @@ import About from './pages/About.jsx'
 import SignUp from './pages/SignUp.jsx'
 import Login from './pages/Login.jsx'
 import Blogs from './pages/Blogs.jsx'
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar.jsx'
 
 const router = createBrowserRouter([
   { 
     path: '/', 
-    element: <><Navbar /><Home /> </>
+    element: <><Navbar /> <Home /> </>
   },
   { 
     path: '/about', 
-    element: <><Navbar /><About /> </>
+    element: <><Navbar /> <About /> </>
   },
   { 
     path: '/signup', 
-    element: <><Navbar /><SignUp /> </> 
+    element: <><Navbar /> <SignUp /> </> 
   },
   { 
     path: '/login', 
-    element: <><Navbar /><Login /> </>
+    element: <><Navbar /> <Login /> </>
   },
   { 
     path: '/blogs', 
-    element: <><Navbar /><Blogs /> </>  
+    element: <><Navbar /> <Blogs /> </>  
   },
 ])
 
 const App = () => {
   return (
-    <RouterProvider router={router} />
+    <RouterProvider router={ router } />
   )
 }
 
