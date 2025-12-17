@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
@@ -5,9 +6,9 @@ const Home = () => {
   return (
     <div>
       <div className='pt-20'>
-        Home Page
+        <Hero />
       </div>
-      <Button>Click Me</Button>
+      
     </div>
   )
 }
