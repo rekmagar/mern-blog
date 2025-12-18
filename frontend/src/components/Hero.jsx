@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from './ui/button'
 import { Link } from 'react-router-dom'
+import heroImg from '../assets/blog2.png'
 
 const Hero = () => {
   return (
@@ -16,6 +17,9 @@ const Hero = () => {
               </div>
           </div>
           {/* image section */}
+          <div className='flex items-center justify-center'>
+            <img src={heroImg} alt="Hero Image" className='md:h-[550px] md:w-[550px]' />
+          </div>
         </div>
     </div>
   )
